@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/logoVertical.svg" type="image/x-icon">
+
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/3d8a730b5e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+
+
+
+
+    <!-- ESTILO -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+
+    <title>AGRO SEBAS</title>
+
+</head>
+
+<body>
+
+    <!--████████████████████████████████████████████████████████████████████████████████████████-->
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="sticky-top">
+        <a href="#inicio">
+            <div class="logo">
+                <picture>
+                    <source srcset="img/logoHorizontal.svg" media="(min-width: 992px)">
+                    <img src="img/logoVertical.svg" alt="">
+
+                </picture>
+                <!-- <img src="img/logo_horizontal.png" alt=""> -->
+            </div>
+        </a>
+        <ul id="lista" class="">
+
+            <li><a href="#nosotros" class="botones" id="btn_nosotros" onclick="estatico(this.id)">Nosotros</a></li>
+            <li><a href="#productos" class="botones" id="btn_productos" onclick="estatico(this.id)">Productos</a></li>
+            <li><a href="#equipo" class="botones" id="btn_equipo" onclick="estatico(this.id)">Nuestro Equipo</a></li>
+            <li><a href="#testimonios" class="botones" id="btn_testimonios" onclick="estatico(this.id)">Testimonios</a>
+            </li>
+            <li><a href="#contactanos" class="botones" id="btn_contacto" onclick="estatico(this.id)">Contacto</a></li>
+
+        </ul>
+
+        <script>
+            function estatico(id) {
+                var botones = document.getElementsByClassName("botones");
+
+                for (i = 0; i < botones.length; i++) {
+                    if (botones[i].classList.contains("seleccionado") == true) {
+                        botones[i].classList.remove("seleccionado");
+                    }
+                }
+
+                botones[id].classList.add("seleccionado");
+
+            }
+        </script>
+
+        <div id="btn_mh">
+            <img src="img/menu icon.png" alt="">
+
+        </div>
+
+    </nav>
+    <!--██████████████████████████████████████-->
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        document.getElementById("btn_mh").addEventListener("click", abrir_menu);
+
+        function abrir_menu() {
+            var lista = document.getElementById("lista");
+
+            if (lista.classList.contains("open") == false) {
+                lista.classList.add("open");
+            } else {
+                lista.classList.remove("open");
+            }
+        }
+    </script>
+    <!-- <header>
+        <div>
+            <img src="img/logo_horizontal.png" alt="">
+        </div>
+
+        <nav>
+            <ul class="nav" id="lista">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#productos">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#equipo">Nuestro Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonios">Testimonios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactanos">Contacto</a>
+                </li>
+            </ul>
+
+            
+
+        </nav>
+
+        <div id="btn-mh">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <script>
+            document.getElementById("btn_mh").addEventListener("click", abrir_menu);
+    
+            function abrir_menu(){
+                var lista=document.getElementById("lista");
+    
+                if(lista.classList.contains("open")==false){
+                    lista.classList.add("open");
+                } 
+                else{
+                lista.classList.remove("open");
+                }
+            }
+        </script>
+    </header> -->
+
+
+    <!--████████████████████████████████████████████████████████████████████████████████████████-->
+    <!-- SLIDER -->
+    <section id="inicio">
+
+        <div id="carouselExampleControls" class="mascara">
+
+            <div class="slider">
+
+                <div class="cuadros">
+                    <img ccl src="img/slider.jpg" alt="">
+
+
+                </div>
+                <div class="cuadros">
+
+                    <img src="img/slider2.jpg" alt="">
+
+                </div>
+                <div class="cuadros">
+
+
+                    <img src="img/slider4.jpg" alt="">
+
+                </div>
+                <div class="cuadros">
+                    <img src="img/slider3.jpg" alt="">
+
+                </div>
+
+            </div>
+    </section>
+
+
+    <!--████████████████████████████████████████████████████████████████████████████████████████-->
+    <!-- NOSOTROS -->
+    <section id="nosotros">
+        <div>
+            <img src="img/sebas.svg" alt="">
+        </div>
+        <p>
+            Agro Sebas se preocupa por sus clientes y maneja una excelente calidad en todos los productos para el
+            consumo diario.
+            <br>
+            Maneja todas las reglas de higiene y conservación exigidas para la crianza de los animales, en la producción
+            y conservación de los alimentos.
+
+        </p>
+    </section>
+
+
+    <!--████████████████████████████████████████████████████████████████████████████████████████-->
+    <!-- PRODUCTOS -->
+
+    <section id="productos">
+        <h2>PRODUCTOS</h2>
+
+        <div class="productosGrande">
+            <article>
+                <div>
+                    <img src="img/lechones.png" alt="">
+
+                </div>
+                <h3>LECHONES</h3>
+                <p>Realizamos una adecuada clasificación de lechones. Garantizamos el bienestar animal y la seguridad
+                    alimentaria.</p>
+            </article>
+
+            <article>
+                <div>
+                    <img src="img/huevos.png" alt="">
+                </div>
+                <h3>HUEVOS</h3>
+                <p>Las gallinas están en las mejores condiciones para su etapa productiva, y realizamos diariamente la
+                    recolección</p>
+            </article>
+
+            <article>
+                <div>
+                    <img src="img/conejo.png" alt="">
+
+                </div>
+                <h3>CONEJO</h3>
+                <p>Manejamos su crianza manteniendo el bienestar de la hembra y sus crías para la venta</p>
+            </article>
+
+            <article>
+                <div>
+                    <img src="img/marrano.png" alt="">
+
+                </div>
+                <h3>CERDO DE ENGORDE</h3>
+                <p>En Agro Sebas los criamos, garantizando si bienestar y cuidado.
+                </p>
+            </article>
+
+            <article>
+                <div>
+                    <img src="img/cuajda.png" alt="">
+
+                </div>
+                <h3>CUAJADA</h3>
+                <p>Queso fresco, fabricado a partir de leche casera de alta calidad </p>
+            </article>
+
+            <article>
+                <div>
+                    <img src="img/carneCerdo.png" alt="">
+
+                </div>
+                <h3>CERDO EN PIE</h3>
+                <p>Carne de excelente calidad, buen manejo de corte, refrigeración y empaque para su consumo.</p>
+            </article>
+        </div>
+    </section>
+
+    <!--████████████████████████████████████████████████████████████████████████████████████████-->
+    <!-- NUESTRO EQUIPO -->
+    <section id="equipo">
+        <h2>NUESTRO EQUIPO</h2>
+        <div class="grandeEquipo">
+            <div class="imagenes">
+                <img src="img/foto1.jpg" alt="">
+            </div>
+            <div class="info">
+
+                <div class="yohanna1">
+                    <h3>Yohanna Gamboa</h3>
+                    <h4>Administradora</h4>
+                    <p>Manejo del área administrativa de Agro Sebas, comercialización y venta de productos.
+                    </p>
+                </div>
+
+                <div class="miguel2">
+                    <h3>Miguel Ángel Gamboa</h3>
+                    <h4>Distribuidor</h4>
+                    <p>Encargado de realizar compras de insumos para los animales y distribución de los pedidos a cada
+                        cliente.
+
+                    </p>
+                </div>
+
+
+
+
+
+                <img src="img/abajo.png" alt="" class="flechaAbajo">
+
+            </div>
+
+            <div class="imagenes">
+                <img src="img/foto2.jpg" alt="">
+            </div>
+            <div class="info">
+                <img src="img/triangulo.png" class="flechaUno" alt="">
+                <div class="yohanna2">
+                    <h3>Yohanna Gamboa</h3>
+                    <h4>Administradora</h4>
+                    <p>Manejo del área administrativa de Agro Sebas, comercialización y venta de productos.
+                    </p>
+                </div>
+
+                <div class="jose1">
+                    <h3>José Linares</h3>
+                    <h4>Gerente de operaciones</h4>
+                    <p>Responsable del bienestar de los animales como alimentarlos y asearlos, también de alistar la
+                        producción del día a día.
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="imagenes">
+                <img src="img/foto3.jpg" alt="">
+            </div>
+            <div class="info">
+                <img src="img/triangulo.png" class="flechaUno" alt="">
+                <div class="jose2">
+                    <h3>Jose Linares</h3>
+                    <h4>Gerente de operaciones</h4>
+                    <p>Responsable del bienestar de los animales como alimentarlos y asearlos, también de alistar la
+                        producción del día a día.
+                    </p>
+                </div>
+                <div class="miguel1">
+                    <h3>Miguel Ángel Gamboa</h3>
+                    <h4>Distribuidor</h4>
+                    <p>Encargado de realizar compras de insumos para los animales y distribución de los pedidos a cada
+                        cliente.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--████████████████████████████████████████████████████████████████████████████████████████-->
+    <!-- TESTIMONIOS -->
+
+    <section id="testimonios">
+        <h2>¿Qué opinan nuestros clientes?</h2>
+        <div class="tarjetaTesti">
+            <article>
+                <div class="marco">
+                    <img src="img/granjero1.png" alt="">
+                </div>
+                <div class="contenido">
+                    <h3>Ayde Martinez</h3>
+                    <p>Excelentes productos de gran calidad, totalmente frescos y saludables. Rapidez en los envios y me
+                        llegan a la puerta de mi casa.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="marco">
+                    <img src="img/granjero2.png" alt="">
+                </div>
+                <div class="contenido">
+                    <h3>Luis Sarmiento</h3>
+                    <p>
+                        Los animales como cerdos y conejos son de muy buen nivel de cuidado, esto se reconoce en el buen
+                        sabor y textura de la carne.</p>
+                </div>
+            </article>
+    </section>
+
+    <!--████████████████████████████████████████████████████████████████████████████████████████-->
+    <!-- CONTÁCTANOS -->
+    <section id="contactanos">
+
+        <h2>CONTÁCTANOS</h2>
+
+        <div class="grandeContacto">
+            <!--████████████████████████████████████████-->
+            <!-- FORMULARIO -->
+
+            <div class="form">
+                <p>Si estás interesado en adquirir alguno de nuestros productos o servicios, ¡Contáctanos! Atendemos
+                    ventas al por mayor y al detal.</p>
+
+
+                <form id="form" class="formulario" action="https://formspree.io/f/myylrlpy" method="POST">
+                    <div class="mb-3">
+
+                        <input name="name" required id="name" type="text" class="form-control"
+                            placeholder="Ingresa tu nombre:">
+                    </div>
+                    <div class="mb-3">
+                        <input name="tel" id="tel" required type="tel" class="form-control"
+                            placeholder="Teléfono de contacto:">
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="message" id="message" class="form-control" rows="4" cols="30"
+                            placeholder="Cuéntanos en que producto estas interesado:"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar mensaje</button>
+
+                </form>
+
+
+
+                <script>
+                    const $form = document.querySelector('#form');
+                    $form.addEventListener('submit', handlesubmit);
+
+                    async function handlesubmit(event) {
+                        event.preventDefault();
+                        const form = new FormData(this);
+                        const response = await fetch(this.action, {
+                            method: this.method,
+                            body: form,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        })
+                        if (response.ok) {
+                            this.reset();
+                            alert("Gracias por escribirnos, te contactaremos pronto")
+                        }
+                    }
+                </script>
+
+            </div>
+
+
+
+            <!--████████████████████████████████████████-->
+            <!-- CUADROS DE CONTACTO -->
+            <div class="cuadrados">
+                <a class="individual verde" href="https://api.whatsapp.com/send?phone=573158761804&text=Hola!%20Bienvenidos%20Agro%20Sebas.%20%C2%A1Estamos%20encantados%20de%20que%20nos%20hayas%20contactado!%20Te%20responderemos%20lo%20m%C3%A1s%20pronto%20posible.%20Cu%C3%A9ntanos%20en%20qu%C3%A9%20producto%20est%C3%A1s%20interesado!" target="_blank">
+
+                    <div>
+                        <img src="img/whatsapp.png" alt="">
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <h4>315 8761805</h4>
+                </a>
+
+                <a class="individual naranja" href="https://goo.gl/maps/Y5w1frDmncaazEF19" target="_blank">
+                    <div>
+                        <img src="img/ubicacion.png" alt="">
+                    </div>
+                    <h3 class="aguaDios">Agua de Dios, <br> Cundinamarca</h3>
+                    <h4 class="textoAgua">Finca Buenavista, <br> Vereda Ibáñez </h4>
+                </a>
+
+                <a class="individual naranja" href="https://www.instagram.com/agrosebas94/" target="_blank">
+                    <div>
+                        <img src="img/instagram.png" alt="">
+                    </div>
+                    <h3>Instagram</h3>
+                    <h4>@agrosebas94</h4>
+                </a>
+
+                <a class="individual verde" href="https://www.facebook.com/profile.php?id=100075416702426" target="_blank">
+                    <div>
+                        <img src="img/facebook.png" alt="">
+                    </div>
+                    <h3>Facebook</h3>
+                    <h4>agrosebas94</h4>
+                </a>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!--████████████████████████████████████████████████████████████████████████████████████████-->
+    <!-- FOOTER -->
+    <footer>
+        <div class="imagen">
+            <picture>
+                <source srcset="img/horizontalBlanco.svg" media="(min-width: 768px)">
+                <img src="img/verticalBlanco.svg" alt="">
+            </picture>
+
+        </div>
+        <p>© Agro Sebas 2021</p>
+        <div class="redes">
+            <a href="https://api.whatsapp.com/send?phone=573158761804&text=Hola!%20Bienvenidos%20Agro%20Sebas.%20%C2%A1Estamos%20encantados%20de%20que%20nos%20hayas%20contactado!%20Te%20responderemos%20lo%20m%C3%A1s%20pronto%20posible.%20Cu%C3%A9ntanos%20en%20qu%C3%A9%20producto%20est%C3%A1s%20interesado!" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a href="https://www.instagram.com/agrosebas94/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=100075416702426" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

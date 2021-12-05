@@ -1,0 +1,1543 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --naranja: #f05a2b;
+    --verde: #089900;
+    --grisClaro: #808285;
+    --muyclaro: #F5F5F5;
+    --grisOscuro: #333333;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+section {
+    padding-top: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* BARRA DE NAVEGACIÓN */
+
+nav {
+    background-color: rgb(255, 255, 255);
+    height: 65px;
+    display: flex;
+    font-size: 1em;
+    font-weight: 300;
+    justify-content: space-between;
+}
+
+nav div {
+    width: 390px;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+nav div img {
+    width: 85%;
+    margin-left: 45px;
+    position: relative;
+    bottom: 10px;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 65%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--grisOscuro);
+    font-size: 16px;
+    transition: 0.4s;
+    border-bottom: 2px solid #08990000;
+}
+
+nav ul li a:hover,
+nav ul li .seleccionado {
+    color: var(--grisOscuro);
+    border-bottom: 2px solid #089900;
+}
+
+nav #btn_mh {
+    width: 40px;
+    height: 40px;
+    margin: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: relative;
+    right: 20px;
+    top: 15px;
+}
+
+nav #btn_mh img {
+    position: relative;
+    top: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* SLIDER*/
+
+#inicio {
+    padding-top: 0;
+    height: 490px;
+    z-index: 0;
+    position: relative;
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* NOSOTROS */
+
+#nosotros {
+    min-height: 494px;
+    background-color: var(--naranja);
+    position: relative;
+    display: flex;
+}
+
+#nosotros div {
+    width: 456px;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
+#nosotros div img {
+    height: 100%;
+}
+
+#nosotros p {
+    width: 523px;
+    height: 246px;
+    font-size: 25px;
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    text-align: right;
+    right: 80px;
+    top: 120px;
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* PRODUCTOS */
+
+#productos {
+    min-height: 916px;
+    background-color: var(--muyclaro);
+    padding-bottom: 70px;
+}
+
+#productos h2 {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 900;
+    color: var(--naranja);
+}
+
+#productos .productosGrande {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 978px;
+    min-height: 658px;
+    margin: auto;
+}
+
+#productos article {
+    width: 287px;
+    min-height: 308px;
+    background-color: var(--verde);
+    margin: 20px 0;
+    border-radius: 50px 50px 25px 25px;
+}
+
+#productos article div {
+    clip-path: inset(0 0 10% 0);
+}
+
+#productos article div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#productos article h3 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+#productos article p {
+    font-size: 16px;
+    padding: 0 10px;
+    color: white;
+    text-align: center;
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* NUESTRO EQUIPO */
+
+#equipo {
+    height: 840px;
+    padding-bottom: 75px;
+}
+
+#equipo h2 {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 900;
+    color: var(--verde);
+}
+
+#equipo .grandeEquipo {
+    width: 873px;
+    height: 561px;
+    margin: 37px auto 73px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#equipo .grandeEquipo div {
+    width: 280px;
+    height: 281px;
+    background-color: var(--naranja);
+}
+
+#equipo .grandeEquipo .imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#equipo .grandeEquipo .info {
+    padding: 50px 19px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+#equipo .grandeEquipo .info .flechaUno {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    top: -35px;
+    display: none;
+}
+
+#equipo .grandeEquipo .info .flechaAbajo {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    bottom: -35px;
+    display: none;
+}
+
+#equipo .grandeEquipo .info div {
+    background-color: #f05a2b;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 45px 10px;
+    z-index: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#equipo .grandeEquipo .info .yohanna1 {
+    z-index: 1;
+}
+
+#equipo .grandeEquipo .info div h3 {
+    font-size: 28px;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+#equipo .grandeEquipo .info div h4 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+#equipo .grandeEquipo .info div p {
+    font-size: 17px;
+    font-weight: 400;
+
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* TESTIMONIOS */
+
+#testimonios {
+    min-height: 600px;
+    background-image: linear-gradient(rgba(8, 153, 0, 0.78), rgba(8, 153, 0, 0.7)), url(../img/pastp.png);
+    background-attachment: fixed;
+    padding-bottom: 70px;
+}
+
+#testimonios h2 {
+    width: 100%;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+}
+
+#testimonios .tarjetaTesti {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#testimonios article {
+    width: 437px;
+    margin: 49px 38px;
+    height: 241px;
+    background-color: white;
+    padding: 35px 20px;
+    border-radius: 31px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#testimonios article .marco {
+    width: 171px;
+    height: 171px;
+}
+
+#testimonios article .marco img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#testimonios article .contenido {
+    width: 208px;
+    height: 148px;
+    margin-left: 10px;
+}
+
+#testimonios article .contenido h3 {
+    font-size: 26px;
+    color: var(--naranja);
+    font-weight: 600;
+}
+
+#testimonios article .contenido p {
+    font-size: 16px;
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* CONTACTANOS */
+
+#contactanos {
+    min-height: 636px;
+    background-color: var(--muyclaro);
+    padding: 0 50px;
+}
+
+#contactanos h2 {
+    width: 100%;
+    padding-top: 60px;
+    font-size: 65px;
+    font-weight: 900;
+    color: var(--naranja);
+}
+
+#contactanos .grandeContacto {
+    display: flex;
+    justify-content: space-around;
+}
+
+#contactanos .grandeContacto .form {
+    width: 560px;
+    height: 100%;
+    /* margin-right: 50px; */
+}
+
+#contactanos .grandeContacto .form p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#contactanos .grandeContacto .form form div input {
+    border: none;
+    border-bottom: 3px solid #089900;
+    border-radius: 0%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    background-color: transparent;
+    outline-width: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#contactanos .grandeContacto .form form div input:hover {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #089900;
+}
+
+#contactanos .grandeContacto .form form div textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    background-color: transparent;
+    border-bottom: 3px solid #089900;
+    border-radius: 0%;
+    outline-width: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#contactanos .grandeContacto .form form button {
+    background-color: var(--verde);
+    font-size: 18px;
+    padding: 10px 15px;
+    font-weight: 700;
+    color: white;
+    margin-top: 38.5px;
+}
+
+/*████████████████████████████████████████*/
+/* REDES SOCIALES */
+
+#contactanos .grandeContacto .cuadrados {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    position: relative;
+    bottom: 70px;
+    right: -20px;
+    justify-content: space-around;
+}
+
+#contactanos .grandeContacto .cuadrados .individual {
+    background-color: rgb(70, 70, 3);
+    width: 225px;
+    height: 225px;
+    margin: 15px 0;
+    border-radius: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#contactanos .grandeContacto .cuadrados .individual div {
+    width: 95px;
+    height: 107px;
+}
+
+#contactanos .grandeContacto .cuadrados .individual div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#contactanos .grandeContacto .cuadrados .individual h3 {
+    font-weight: 600;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+#contactanos .grandeContacto .cuadrados .individual .aguaDios {
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+#contactanos .grandeContacto .cuadrados .individual h4 {
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+    bottom: 15px;
+}
+
+#contactanos .grandeContacto .cuadrados .individual .textoAgua {
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+}
+
+#contactanos .grandeContacto .cuadrados .verde {
+    background-color: var(--verde);
+}
+
+#contactanos .grandeContacto .cuadrados .naranja {
+    background-color: var(--naranja);
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* FOOTER */
+
+footer {
+    height: 50px;
+    background-color: var(--naranja);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+footer .imagen {
+    height: 50px;
+}
+
+footer .imagen img {
+    height: 100%;
+}
+
+footer p {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer .redes {
+    width: 234px;
+    margin-bottom: 2px;
+    font-size: 30px;
+}
+
+footer .redes a {
+    color: white;
+    margin: 15px;
+}
+
+/*█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* RESPONSIVE */
+
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* XS */
+
+@media screen and (min-width:0px) and (max-width: 575px) {
+
+    /* body{
+background-color: brown;
+width: 100%;
+} */
+    /* body{
+background-color: rgb(255, 51, 0);
+} */
+    nav {
+        height: 100px;
+        width: 100%;
+    }
+
+    nav .logo {
+        margin: 10px 25%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 92%;
+    }
+
+    nav .logo img {
+        height: 100%;
+    }
+
+    nav #btn_mh {
+        display: flex;
+        cursor: pointer;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 99px;
+        right: -5700px;
+        width: 100%;
+        z-index: 200;
+        height: 400px;
+        flex-direction: column;
+        background-color: white;
+        transition: 0.4s;
+    }
+
+    nav #btn_mh {
+        width: 30px;
+        height: 30px;
+        margin: 15px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 20px;
+        top: 15px;
+    }
+
+    nav .open {
+        right: 0px;
+    }
+
+    nav ul li {
+        border-bottom: solid #08990000 1px;
+        margin: 5px 0;
+        position: relative;
+        right: 15px;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        transition: 0.4s;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        border-bottom: 1.5px solid #089900;
+    }
+
+    nav ul li a:hover {
+        border-bottom: 1.5px solid #f05a2b;
+    }
+
+    /*████████████████████████████████████████*/
+    /* SLIDER */
+    #inicio {
+        height: 500px;
+        z-index: 0;
+    }
+
+    /*████████████████████████████████████████*/
+    /* NOSOTROS */
+    #nosotros {
+        display: flex;
+        flex-wrap: wrap;
+        height: 550px;
+    }
+
+    #nosotros div {
+        height: 60%;
+        width: 25%;
+        top: -100px;
+        left: 20%;
+    }
+
+    #nosotros p {
+        text-align: center;
+        width: 95%;
+        margin: auto;
+        margin-top: 250px;
+        position: static;
+        font-size: 20px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* PRODUCTOS */
+    #productos h2 {
+        font-size: 50px;
+    }
+
+    #productos .productosGrande {
+        width: 300px;
+    }
+
+    #productos article {
+        width: 397px;
+        min-height: 320px;
+        border-radius: 70px 70px 25px 25px;
+    }
+
+    #productos article h3 {
+        font-size: 30px;
+    }
+
+    #productos article p {
+        font-size: 17px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* EQUIPO */
+    #equipo {
+        height: 1600px;
+    }
+
+    #equipo h2 {
+        font-size: 50px;
+    }
+
+    #equipo .grandeEquipo {
+        width: 300px;
+        justify-content: center;
+    }
+
+    #equipo .grandeEquipo .info {
+        width: 400px;
+        height: 200px;
+        padding: 0 10px;
+        margin-bottom: 30px;
+        border-radius: 0 0 31px 31px;
+    }
+
+    #equipo .grandeEquipo .info div{
+        height: 100%;
+        width: 100%;
+        padding: 20px 15px;
+        border-radius: 0 0 31px 31px;
+    }
+
+    #equipo .grandeEquipo .imagenes {
+        width: 350px;
+        height: 200px;
+        margin-bottom: 0;
+        border-radius: 31px 31px 0 0;
+
+    }
+
+    #equipo .grandeEquipo .imagenes img{
+        border-radius: 31px 31px 0 0;
+    }
+
+    #equipo .grandeEquipo .info h3 {
+        font-size: 25;
+        margin: 15px 0 3px;
+    }
+
+    #equipo .grandeEquipo .info h4 {
+        margin-bottom: 10px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* TESTIMONIOS */
+    #testimonios h2 {
+        font-size: 40px;
+    }
+
+    #testimonios article {
+        width: 300px;
+        height: 350px;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    #testimonios article .marco {
+        width: 100px;
+        height: 130px;
+    }
+
+    #testimonios article .contenido {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* CONTACTO */
+    #contactanos {
+        padding: 0;
+        padding-bottom: 70px;
+    }
+
+    #contactanos .grandeContacto {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #contactanos h2 {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    #contactanos .grandeContacto .form {
+        margin-bottom: 20px;
+        width: 350px;
+    }
+
+    #contactanos .grandeContacto .form p {
+        font-size: 16px;
+        margin: 0 10px 10px;
+        text-align: center;
+    }
+
+    #contactanos .grandeContacto .form form button {
+        margin: 20px 90px;
+        padding: 15px 20px;
+    }
+
+    #contactanos .grandeContacto .cuadrados {
+        width: 350px;
+        position: static;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual {
+        width: 160px;
+        height: 170px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual div {
+        height: 60px;
+        width: 60px;
+        margin: 10px 0;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual h3 {
+        font-size: 25px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual .aguaDios {
+        font-size: 20px;
+        position: relative;
+        bottom: 15px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual h4 {
+        font-size: 20px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual .textoAgua {
+        font-size: 16px;
+        bottom: 22px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* FOOTER */
+    footer {
+        height: 200px;
+        flex-wrap: wrap;
+    }
+
+    footer .imagen {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer p {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .redes {
+        width: 100%;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .redes a {
+        margin: 0 30px;
+    }
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* S */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    /* body{
+background-color: rgb(255, 51, 0);
+} */
+    nav {
+        height: 100px;
+    }
+
+    nav .logo {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+
+    nav .logo img {
+        height: 92%;
+        margin-top: 10px;
+    }
+
+    nav #btn_mh {
+        display: flex;
+        cursor: pointer;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 99px;
+        right: -5700px;
+        width: 100%;
+        z-index: 200;
+        height: 398px;
+        flex-direction: column;
+        background-color: white;
+        transition: 0.4s;
+    }
+
+    nav .open {
+        right: 0;
+    }
+
+    nav ul li {
+        border-bottom: solid #089900 1px;
+        margin: 5px 0;
+        position: relative;
+        right: 15px;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        transition: 0.4s;
+    }
+
+    nav ul li:hover {
+        border-bottom: solid #f05a2b 2px;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* SLIDER */
+    #inicio {
+        height: 900px;
+        z-index: 0;
+    }
+
+    /*████████████████████████████████████████*/
+    /* NOSOTROS */
+    #nosotros {
+        display: flex;
+        flex-wrap: wrap;
+        height: 620px;
+    }
+
+    #nosotros div {
+        height: 80%;
+        width: 35%;
+        top: -120px;
+        left: 29%;
+    }
+
+    #nosotros p {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-top: 360px;
+        position: static;
+        font-size: 25px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* PRODUCTOS */
+    #productos .productosGrande {
+        width: 500px;
+    }
+
+    #productos article {
+        width: 398px;
+        min-height: 400px;
+        border-radius: 70px 70px 25px 25px;
+    }
+
+    #productos article h3 {
+        font-size: 35px;
+    }
+
+    #productos article p {
+        font-size: 20px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* EQUIPO */
+    #equipo {
+        height: 1730px;
+    }
+
+    #equipo .grandeEquipo {
+        width: 500px;
+        justify-content: center;
+    }
+
+    #equipo .grandeEquipo .info{
+        width: 400px;
+        height: 150px;
+        padding: 0 10px;
+        margin-bottom: 30px;
+        
+        background-color: rgb(43, 206, 206);
+        border-radius: 0 0 31px 31px;
+        }
+
+        #equipo .grandeEquipo .info div{
+            height: 100%;
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 0 0 31px 31px;
+        }
+
+    #equipo .grandeEquipo .imagenes {
+        width: 400px;
+        height: 300px;
+        margin-bottom: 0;
+        border-radius: 31px 31px 0 0;
+    }
+
+    #equipo .grandeEquipo .imagenes img{
+        border-radius: 31px 31px 0 0;
+    }
+
+    #equipo .grandeEquipo .info h3 {
+        font-size: 25;
+        margin: 15px 0 3px;
+    }
+
+    #equipo .grandeEquipo .info h4 {
+        margin-bottom: 10px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* CONTACTO */
+    #contactanos {
+        padding: 0;
+        padding-bottom: 70px;
+    }
+
+    #contactanos .grandeContacto {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #contactanos h2 {
+        text-align: center;
+    }
+
+    #contactanos .grandeContacto .form {
+        margin-bottom: 20px;
+    }
+
+    #contactanos .grandeContacto .form p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #contactanos .grandeContacto .form form button {
+        margin: 20px 35%;
+    }
+
+    #contactanos .grandeContacto .cuadrados {
+        width: 570px;
+        position: static;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual {
+        width: 250px;
+        height: 250px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual div {
+        height: 130px;
+        width: 120px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual h3 {
+        font-size: 28px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual .aguaDios {
+        font-size: 26px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual h4 {
+        font-size: 20px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual .textoAgua {
+        font-size: 19px;
+        bottom: 20px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* FOOTER */
+    footer {
+        height: 200px;
+        flex-wrap: wrap;
+    }
+
+    footer .imagen {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer p {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .redes {
+        width: 100%;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .redes a {
+        margin: 0 30px;
+    }
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* M */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* body{ background-color: rgb(68, 0, 255);
+} */
+    /*████████████████████████████████████████*/
+    /* BARRA DE NAVEGACIÓN */
+    nav {
+        flex-wrap: wrap;
+        height: 190px;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a .logo {
+        width: 250px;
+        height: 130px;
+        margin-bottom: 15px;
+    }
+
+    nav div img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: relative;
+        bottom: 0;
+        right: 8%;
+    }
+
+    nav ul {
+        font-size: 19px;
+        width: 100%;
+        height: 10px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* SLIDER */
+    #inicio {
+        height: 700px;
+        z-index: 0;
+    }
+
+    /*████████████████████████████████████████*/
+    /* NOSOTROS */
+    #nosotros {
+        display: flex;
+        flex-wrap: wrap;
+        height: 530px;
+    }
+
+    #nosotros div {
+        height: 80%;
+        width: 35%;
+        top: -120px;
+        left: 32%;
+    }
+
+    #nosotros p {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-top: 300px;
+        position: static;
+    }
+
+    /*████████████████████████████████████████*/
+    /* PRODUCTOS */
+    #productos .productosGrande {
+        width: 700px;
+    }
+
+    #productos article {
+        width: 300px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* EQUIPO */
+    #equipo {
+        height: 1250px;
+    }
+
+    #equipo .grandeEquipo {
+        width: 750px;
+        justify-content: center;
+    }
+
+    #equipo .grandeEquipo div {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    #equipo .grandeEquipo .info {
+        border-radius: 0 31px 31px 0;
+    }
+    #equipo .grandeEquipo .info div {
+        border-radius: 0 31px 31px 0;
+    }
+
+    #equipo .grandeEquipo .imagenes,
+    #equipo .grandeEquipo .imagenes img {
+        border-radius: 31px 0 0 31px;
+    }
+
+    #equipo .grandeEquipo .info div {
+        background-color: #f05a2b;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        padding: 45px 19px;
+        z-index: 0;
+    }
+
+    /*████████████████████████████████████████*/
+    /* TESTIMONIOS */
+    #testimonios article {
+        width: 300px;
+        height: 350px;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    #testimonios article .marco {
+        width: 100px;
+        height: 130px;
+    }
+
+    #testimonios article .contenido {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* CONTACTO */
+    #contactanos {
+        padding: 0;
+        padding-bottom: 70px;
+    }
+
+    #contactanos .grandeContacto {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #contactanos h2 {
+        text-align: center;
+    }
+
+    #contactanos .grandeContacto .form {
+        margin-bottom: 20px;
+    }
+
+    #contactanos .grandeContacto .form p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #contactanos .grandeContacto .form form button {
+        margin: 20px 35%;
+    }
+
+    #contactanos .grandeContacto .cuadrados {
+        width: 700px;
+        position: static;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual {
+        width: 290px;
+        height: 290px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual div {
+        height: 160px;
+        width: 120px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual h3 {
+        font-size: 35px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual .aguaDios {
+        font-size: 28px;
+        margin-top: 0;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual h4 {
+        font-size: 25px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual .textoAgua {
+        font-size: 20px;
+        bottom: 10px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* FOOTER */
+    footer {
+        height: 200px;
+        flex-wrap: wrap;
+    }
+
+    footer .imagen {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer p {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .redes {
+        width: 100%;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .redes a {
+        margin: 0 30px;
+    }
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* L */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    /*████████████████████████████████████████*/
+    /* BARRA DE NAVEGACION */
+    /* body{
+background-color: rgb(60, 255, 0);
+} */
+    header div {
+        width: 300px;
+    }
+
+    header nav {
+        font-size: 15.7px;
+    }
+
+    header nav ul li {
+        padding: 0px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* INICIO */
+    #inicio {
+        z-index: 0;
+    }
+
+    /*████████████████████████████████████████*/
+    /* NOSOTROS */
+    #nosotros {
+        z-index: 100;
+        top: 0;
+    }
+
+    #nosotros div {
+        left: 20px;
+    }
+
+    #nosotros p {
+        right: 50px;
+        width: 450px;
+    }
+
+    /*████████████████████████████████████████*/
+    /*EQUIPO*/
+    #equipo .grandeEquipo .info .yohanna1 {
+        z-index: 1;
+    }
+
+    #equipo .grandeEquipo .info .yohanna2 {
+        z-index: 1;
+    }
+
+    #equipo .grandeEquipo .info .miguel1 {
+        z-index: 2;
+    }
+
+    #equipo .grandeEquipo .info .miguel2 {
+        z-index: 1;
+    }
+
+    #equipo .grandeEquipo .info .jose2 {
+        z-index: 3;
+    }
+
+    /*████████████████████████████████████████*/
+    /* TESTIMONIOS */
+    #testimonios article {
+        margin: 49px 25px;
+    }
+
+    /*████████████████████████████████████████*/
+    /* CONTACTANOS */
+    #contactanos .grandeContacto .form {
+        width: 450px;
+    }
+
+    #contactanos .grandeContacto .cuadrados {
+        bottom: 40px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual {
+        width: 200px;
+        height: 200px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual div {
+        width: 85px;
+    }
+
+    #contactanos .grandeContacto .cuadrados .individual .aguaDios {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    #equipo .grandeEquipo .info .flechaUno {
+        display: block;
+        left: 39%;
+    }
+
+    #equipo .grandeEquipo .info .flechaAbajo {
+        display: block;
+        left: 38%;
+    }
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* XL */
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    #inicio {
+        margin-bottom: 39px;
+    }
+
+    #contactanos h2 {
+        padding-left: 20px;
+    }
+
+    #equipo .grandeEquipo .info .flechaUno {
+        display: block;
+        left: 39%;
+    }
+
+    #equipo .grandeEquipo .info .flechaAbajo {
+        display: block;
+        left: 38%;
+    }
+
+    #equipo .grandeEquipo .info .yohanna1 {
+        z-index: 1;
+    }
+
+    #equipo .grandeEquipo .info .yohanna2 {
+        z-index: 1;
+    }
+
+    #equipo .grandeEquipo .info .miguel1 {
+        z-index: 2;
+    }
+
+    #equipo .grandeEquipo .info .miguel2 {
+        z-index: 1;
+    }
+
+    #equipo .grandeEquipo .info .jose2 {
+        z-index: 3;
+    }
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████*/
+/* XXL */
+
+@media screen and (min-width: 1400px) {
+
+    /* body{
+background-color: aqua;
+} */
+    #equipo .grandeEquipo .info .flechaUno {
+        display: block;
+        left: 39%;
+    }
+
+    #equipo .grandeEquipo .info .flechaAbajo {
+        display: block;
+        left: 38%;
+    }
+
+    #equipo .grandeEquipo .info .yohanna1 {
+        z-index: 1;
+    }
+
+    #equipo .grandeEquipo .info .yohanna2 {
+        z-index: 1;
+    }
+
+    #equipo .grandeEquipo .info .miguel1 {
+        z-index: 2;
+    }
+
+    #equipo .grandeEquipo .info .miguel2 {
+        z-index: 1;
+    }
+
+    #equipo .grandeEquipo .info .jose2 {
+        z-index: 3;
+    }
+}
